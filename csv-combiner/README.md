@@ -44,3 +44,21 @@ Your script would output
 |176146e4ae48e70df2e628b45dccfd53405c73f951c003fb8c9c09b3207e7aab|Wallets|accessories.csv|
 |63d42170fa2d706101ab713de2313ad3f9a05aa0b1c875a56545cfd69f7101fe|Purses|accessories.csv|
 
+## Solution
+To run the solution, run the following command
+
+```
+$ python3 ./csv_combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv > combined.csv
+```
+In the event that pandas isn't installed, install pandas using this command
+
+```
+$ pip install pandas
+```
+
+## Unit Testing
+To run the unit tests, run the following command
+
+```
+$ python3 -m unittest test-csv_combiner.py
+```
